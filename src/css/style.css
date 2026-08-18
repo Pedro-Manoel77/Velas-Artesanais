@@ -1,4 +1,3 @@
-
 :root{
   --plum-950: #241226;   
   --plum-800: #3B1F4A;   
@@ -91,9 +90,10 @@ ul,ol{ margin:0; padding:0; list-style:none; }
 }
 .btn--gold:hover{ transform:translateY(-2px); box-shadow:0 14px 28px rgba(201,162,39,.35); }
 .btn--ghost{
-  background:transparent;
+  background:linear-gradient(135deg,var(--gold-300),var(--gold-500));
   border-color:var(--gold-500);
-  color:var(--plum-800);
+  color:var(--plum-950);
+  box-shadow:var(--shadow-soft);
 }
 .btn--ghost:hover{ background:rgba(201,162,39,.12); }
 .btn--sm{ padding:.6em 1.1em; font-size:.72rem; }
