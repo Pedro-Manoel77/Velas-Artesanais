@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Mística — Velas Artesanais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+
+<div class="stars" id="stars"></div>
+
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#topo" class="logo">
+      <span class="logo__icon" aria-hidden="true">☾</span>
+      <span class="logo__text">A Mística</span>
+      <span class="logo__icon" aria-hidden="true">☉</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#produtos">Produtos</a>
+      <a href="#velas-espirituais">Velas Espirituais</a>
+      <a href="#velas-latinhas">Latinhas</a>
+      <a href="#velas-aromaticas">Aromáticas</a>
+      <a href="#como-pedir">Como Pedir</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="cart-btn" id="cartToggle" aria-label="Abrir carrinho">
+      <span class="cart-btn__icon">✦</span>
+      Carrinho
+      <span class="cart-btn__count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+
+<section class="hero" id="topo">
+  <div class="hero__sky" aria-hidden="true">
+    <div class="hero__moon"></div>
+    <div class="hero__moon-glow"></div>
+  </div>
+
+  <div class="hero__content">
+    <p class="eyebrow">Catálogo de Produtos</p>
+    <h1 class="hero__title">Luz, proteção<br> e boas vibrações</h1>
+    <p class="hero__lead">
+      Velas artesanais feitas com intenção, ervas e elementos da natureza
+      para elevar sua energia e transformar seu ambiente.
+    </p>
+
+    <ul class="hero__tags">
+      <li>Limpezas energéticas</li>
+      <li>Defumações</li>
+      <li>Proteção</li>
+      <li>Atração de boas vibrações</li>
+      <li>Equilíbrio e bem-estar</li>
+    </ul>
+
+    <div class="hero__actions">
+      <a href="#produtos" class="btn btn--gold">Ver produtos</a>
+      <a href="#como-pedir" class="btn btn--ghost">Como fazer meu pedido</a>
+    </div>
+  </div>
+
+  
+  <div class="hero__candle" aria-hidden="true">
+    <div class="candle">
+      <div class="candle__flame">
+        <div class="candle__flame-core"></div>
+      </div>
+      <div class="candle__glow"></div>
+      <div class="candle__wick"></div>
+      <div class="candle__wax">
+        <div class="candle__drip candle__drip--1"></div>
+        <div class="candle__drip candle__drip--2"></div>
+      </div>
+      <div class="candle__base"></div>
+    </div>
+  </div>
+</section>
+
+
+<div class="divider"><span>✦</span><span>✦</span><span>✦</span></div>
+
+<main id="produtos">
+
+ 
+  <section class="section" id="velas-espirituais">
+    <div class="section__banner">
+      <h2>Velas Espirituais e Defumadoras</h2>
+      <p class="section__banner-sub">Altura aprox. 13,5 cm · Largura aprox. 1,1 cm · Peso aprox. 13 g</p>
+    </div>
+
+    <div class="grid grid--products" id="grid-espirituais">
+      
+    </div>
+
+    <div class="price-panel">
+      <h3>Valores</h3>
+      <table class="price-table">
+        <tbody>
+          <tr><td>1 vela</td><td class="price-table__dots"></td><td>R$ 15,00</td></tr>
+          <tr><td>2 velas</td><td class="price-table__dots"></td><td>R$ 28,00</td></tr>
+          <tr><td>3 velas</td><td class="price-table__dots"></td><td>R$ 40,00</td></tr>
+          <tr><td>4 velas</td><td class="price-table__dots"></td><td>R$ 52,00</td></tr>
+        </tbody>
+      </table>
+      <p class="price-panel__highlight">5 velas ou mais: <strong>R$ 13,00 cada</strong> <span>(R$ 65,00 pelas 5)</span></p>
+    </div>
+
+   
+    <div class="add-box">
+      <label for="qtd-espiritual">Quantas velas espirituais você quer?</label>
+      <div class="add-box__row">
+        <select id="essencia-espiritual">
+          <option value="Arruda">Arruda</option>
+          <option value="Sal Grosso">Sal Grosso</option>
+          <option value="Anil">Anil</option>
+          <option value="Calêndula">Calêndula</option>
+          <option value="Arruda + Sal Grosso">Arruda + Sal Grosso</option>
+          <option value="Anil + Sal Grosso">Anil + Sal Grosso</option>
+        </select>
+        <input type="number" id="qtd-espiritual" min="1" value="1">
+        <button class="btn btn--gold btn--sm" data-add="espiritual">Adicionar</button>
+      </div>
+      <p class="add-box__preco" id="preco-espiritual">Total: R$ 15,00</p>
+    </div>
+  </section>
+
+  <div class="divider"><span>✦</span><span>✦</span><span>✦</span></div>
+
+ 
+  <section class="section" id="velas-latinhas">
+    <div class="grid grid--split">
+
+      <div class="split-card">
+        <div class="section__banner section__banner--sage">
+          <h2>Latinhas sem Personalização</h2>
+          <p class="section__banner-sub">Acima de 10 unidades</p>
+        </div>
+        <table class="price-table price-table--compact">
+          <tbody id="tabela-latinhas-simples"></tbody>
+        </table>
+        <div class="add-box">
+          <label for="qtd-latinha-simples">Quantidade</label>
+          <div class="add-box__row">
+            <select id="qtd-latinha-simples"></select>
+            <button class="btn btn--gold btn--sm" data-add="latinha-simples">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-card">
+        <div class="section__banner section__banner--rose">
+          <h2>Latinhas Personalizadas</h2>
+          <p class="section__banner-sub">Acima de 10 unidades · escolha o aroma</p>
+        </div>
+
+        <div class="aromas" id="aromas-lista"></div>
+
+        <table class="price-table price-table--compact">
+          <tbody id="tabela-latinhas-personalizadas"></tbody>
+        </table>
+        <div class="add-box">
+          <label for="aroma-latinha">Aroma</label>
+          <div class="add-box__row add-box__row--wrap">
+            <select id="aroma-latinha"></select>
+            <select id="qtd-latinha-personalizada"></select>
+            <button class="btn btn--gold btn--sm" data-add="latinha-personalizada">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"><span>✦</span><span>✦</span><span>✦</span></div>
+
+
+  <section class="section" id="velas-aromaticas">
+    <div class="section__banner">
+      <h2>Velas Aromáticas</h2>
+      <p class="section__banner-sub">Aprox. 170 g · R$ 29,00 cada</p>
+    </div>
+
+    <div class="grid grid--products" id="grid-aromaticas">
+      
+    </div>
+  </section>
+
+  <div class="divider"><span>✦</span><span>✦</span><span>✦</span></div>
+
+  
+  <section class="section section--narrow" id="como-pedir">
+    <div class="section__banner">
+      <h2>Como Fazer seu Pedido</h2>
+    </div>
+    <ol class="steps">
+      <li><strong>Escolha</strong> suas velas e aromas favoritos no catálogo acima.</li>
+      <li><strong>Adicione</strong> ao carrinho e confira o valor total calculado automaticamente.</li>
+      <li><strong>Finalize</strong> pelo botão "Enviar pedido pelo WhatsApp" — sua seleção já vai pronta na mensagem.</li>
+      <li><strong>Combine</strong> com a gente a forma de entrega e pagamento. 💜</li>
+    </ol>
+  </section>
+
+</main>
+
+
+<footer class="footer" id="contato">
+  <div class="footer__inner">
+    <p class="footer__brand">☾ A Mística ☉</p>
+    <p class="footer__msg">Tudo feito com muito carinho e intenção. ✨</p>
+    <p class="footer__contato">
+      Fale com a gente: <a href="#" id="whatsappLink">WhatsApp</a> · Instagram: @amistica
+    </p>
+    <p class="footer__legal">Site feito com 💜 — protótipo educativo, sem coleta de dados.</p>
+  </div>
+</footer>
+
+
+<aside class="cart" id="cart" aria-hidden="true">
+  <div class="cart__header">
+    <h3>Seu Carrinho</h3>
+    <button class="cart__close" id="cartClose" aria-label="Fechar carrinho">✕</button>
+  </div>
+  <ul class="cart__items" id="cartItems">
+    <li class="cart__empty">Seu carrinho está vazio.</li>
+  </ul>
+  <div class="cart__footer">
+    <p class="cart__total">Total: <span id="cartTotal">R$ 0,00</span></p>
+    <button class="btn btn--gold btn--block" id="checkoutBtn">Enviar pedido pelo WhatsApp</button>
+    <button class="btn btn--ghost btn--block" id="clearCartBtn">Esvaziar carrinho</button>
+  </div>
+</aside>
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<script src="src/js/script.js"></script>
+</body>
+</html>
