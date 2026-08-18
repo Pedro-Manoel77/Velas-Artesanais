@@ -1,23 +1,21 @@
 
 :root{
-  /* --- cores --- */
-  --plum-950: #241226;   /* fundo do céu, quase preto arroxeado */
-  --plum-800: #3B1F4A;   /* roxo profundo — header, hero, rodapé */
-  --plum-600: #5C3566;   /* roxo médio — bandeiras principais */
-  --mauve-400:#9B6B8C;   /* malva — detalhes suaves */
-  --sage-600: #5F6F49;   /* verde-sálvia — bandeira "sem personalização" */
-  --rose-600: #8C3B4A;   /* rosa-empoeirado — bandeira "personalizadas" */
-  --gold-500: #C9A227;   /* dourado — preços, ícones, bordas */
-  --gold-300: #E8C766;   /* dourado claro — brilho, hover */
-  --cream-100:#F6EEDD;   /* pergaminho claro — fundo geral */
-  --cream-200:#EFE3C8;   /* pergaminho — cartões */
-  --ink-900:  #2A1B2E;   /* texto principal */
-  --ink-600:  #5A4A5E;   /* texto secundário */
+  --plum-950: #241226;   
+  --plum-800: #3B1F4A;   
+  --plum-600: #5C3566;   
+  --mauve-400:#9B6B8C;   
+  --sage-600: #5F6F49;   
+  --rose-600: #8C3B4A;   
+  --gold-500: #C9A227;   
+  --gold-300: #E8C766;   
+  --cream-100:#F6EEDD;   
+  --cream-200:#EFE3C8;   
+  --ink-900:  #2A1B2E;   
+  --ink-600:  #5A4A5E;   
 
-  /* --- tipografia --- */
-  --font-display: "Cinzel", serif;                 /* títulos, estilo do "CATÁLOGO" */
-  --font-script:  "Tangerine", cursive;             /* logo/assinatura */
-  --font-body:    "Cormorant Garamond", serif;      /* textos corridos */
+  --font-display: "Cinzel", serif;                 
+  --font-script:  "Tangerine", cursive;             
+  --font-body:    "Cormorant Garamond", serif;      
 
   --radius: 14px;
   --shadow-soft: 0 10px 30px rgba(36,18,38,.18);
